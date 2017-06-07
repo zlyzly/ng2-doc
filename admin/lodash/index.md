@@ -24,4 +24,31 @@
     => [2, 3] 默认是1开始的
     _.drop([1, 2, 3], 2);
     => [3]
+5. _.dropWhile(array, [predicate=_.identity], [thisArg]) 
+***
+    从左起第一个不满足条件的开始截取数组,返回截取后的数组[根据thisArg的值返回对应的值，以数组的格式]。
+    参数
+    1.array (Array): 需要查询的数组
+    2.[predicate=_.identity] (Function|Object|string): 数组遍历的条件
+    3.[thisArg] (*): 对应 predicate 属性的值.
+    _.dropWhile([1, 2, 3], function(n) {
+    return n < 3;
+    });
+    // => [3]
+    var users = [
+    { 'user': 'barney',  'active': false },
+    { 'user': 'fred',    'active': false },
+    { 'user': 'pebbles', 'active': true }
+    ];
+    // using the `_.matches` callback shorthand
+    _.pluck(_.dropWhile(users, { 'user': 'barney', 'active': false }), 'user');
+    // => ['fred', 'pebbles']
+
+    // using the `_.matchesProperty` callback shorthand
+    _.pluck(_.dropWhile(users, 'active', false), 'user');
+    // => ['pebbles']
+
+    // using the `_.property` callback shorthand
+    _.pluck(_.dropWhile(users, 'active'), 'user');
+    // => ['barney', 'fred', 'pebbles']
   
