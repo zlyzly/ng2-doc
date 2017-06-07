@@ -10,13 +10,14 @@
 2. _.compact(array) :压紧。
 - - - -
     返回一个非假的值，假的值，0,'',false,null,NAN,undefind.
-3. _.difference(array, [values]) :去掉array中values中的值(没有的除外)。
+3. _.difference(array, [values]) :删除指定/不确定。
 * * *
+    去掉array中values中的值(没有的除外)
     _.difference([1, 2, 3], [4, 2]);
     => [1, 3] 去掉2.
-4. _.drop(array, [n=1]) :截取掉n之前的元素返回剩余的(n默认为1，从1开始)。
-   _.dropRight(array, [n=1]) 区别:从数组末尾开始。
-***
+4. _.drop(array, [n=1]) :截取。
+*** 
+    截取掉n之前的元素返回剩余的(n默认为1，从1开始)。_.dropRight(array, [n=1]) 区别:从数组末尾开始
     参数
     1.array (Array): 被操作的数组。2.[n=1] (number): 去掉的元素个数。
     _.drop([1, 2, 3]);
