@@ -1,6 +1,5 @@
-## Lodash
-    - [Array](#Array)
-    - [Collection](#Collection)
+- [Array](#Array)
+- [Collection](#Collection)
 ###  Array 
 1. _chunk(array, [size=1]) :块。
 ``` 
@@ -67,5 +66,74 @@
     3.[start=0] (number): 起始位置（包含）
     4.[end=array.length] (number): 结束位置（不含）
 ```
+### Collection 
+1. _.every(collection,条件,thisArg)
+```
+    若所有元素通过谓词检查返回true，否则false.
+```
+2. _find(collection,条件,thisArg)，返回匹配的元素，否则undefined.
+3. _findWhere(collection,source)
+```
+   1.collection （阵列|对象|字符串）：集合进行搜索。
+   2.source （对象）：属性值的对象进行匹配。
+    var users = [
+   { 'user': 'barney', 'age': 36, 'active': true },
+   { 'user': 'fred',   'age': 40, 'active': false }
+   ];
 
-  
+   _.result(_.findWhere(users, { 'age': 36, 'active': true }), 'user');
+   => 'barney'
+```
+4. _forEach(collection,每次迭代调用的函数,thisArg)
+```
+    _([1, 2]).forEach(function(n) {}).value();
+    => logs each value from left to right and returns the array
+
+    _.forEach({ 'a': 1, 'b': 2 }, function(n, key) {
+    console.log(n, key);
+    });
+```
+5. _.groupBy(collection, 每次迭代调用的函数, [thisArg]):组成聚合对象。
+```
+    _.groupBy([4.2, 6.1, 6.4], function(n) {
+    return Math.floor(n);
+    });
+     => { '4': [4.2], '6': [6.1, 6.4] }
+
+    _.groupBy([4.2, 6.1, 6.4], function(n) {
+    return this.floor(n);
+    }, Math);
+     => { '4': [4.2], '6': [6.1, 6.4] }
+
+    _.groupBy(['one', 'two', 'three'], 'length');
+     => { '3': ['one', 'two'], '5': ['three'] }
+```
+6. _.includes(collection, target, [fromIndex=0]):匹配的元素被发现返回true,否则false.
+```
+    1.collection （阵列|对象|字符串）：集合进行搜索。
+    2.target （*） ：这个值来搜索。
+    3.[fromIndex=0] （数字）：从搜索的索引。
+    _.includes([1, 2, 3], 1);
+     => true
+
+    _.includes([1, 2, 3], 1, 2);
+     => false
+
+    _.includes({ 'user': 'fred', 'age': 40 }, 'fred');
+    => true
+
+    _.includes('pebbles', 'eb');
+     => true
+```
+7. _.reduce(collection, 迭代的调用的函数, [初始值], [thisArg])：返回累积的值。
+``` 
+    _.reduce([1, 2], function(total, n) {
+    return total + n;
+    });
+    => 3
+
+    _.reduce({ 'a': 1, 'b': 2 }, function(result, n, key) {
+    result[key] = n * 3;
+    return result;
+    }, {}); => { 'a': 3, 'b': 6 }
+```
