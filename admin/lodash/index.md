@@ -23,7 +23,7 @@
 4. _.drop(array, [n=1]) :截取。
 ```
     截取掉n之前的元素返回剩余的(n默认为1，从1开始)。_.dropRight(array, [n=1]) 区别:从数组末尾开始
-    参数
+    
     1.array (Array): 被操作的数组。2.[n=1] (number): 去掉的元素个数。
     _.drop([1, 2, 3]);
     => [2, 3] 默认是1开始的
@@ -37,26 +37,25 @@
     1.array (Array): 需要查询的数组
     2.[predicate=_.identity] (Function|Object|string): 数组遍历的条件
     3.[thisArg] (*): 对应 predicate 属性的值.
+
     _.dropWhile([1, 2, 3], function(n) {
     return n < 3;
     });
-    // => [3]
+    => [3]
     var users = [
     { 'user': 'barney',  'active': false },
     { 'user': 'fred',    'active': false },
     { 'user': 'pebbles', 'active': true }
     ];
-    // using the `_.matches` callback shorthand
+
     _.pluck(_.dropWhile(users, { 'user': 'barney', 'active': false }), 'user');
-    // => ['fred', 'pebbles']
+    => ['fred', 'pebbles']
 
-    // using the `_.matchesProperty` callback shorthand
     _.pluck(_.dropWhile(users, 'active', false), 'user');
-    // => ['pebbles']
+    => ['pebbles']
 
-    // using the `_.property` callback shorthand
     _.pluck(_.dropWhile(users, 'active'), 'user');
-    // => ['barney', 'fred', 'pebbles']
+    => ['barney', 'fred', 'pebbles']
 ```
 6. _.fill(array, value, [start=0], [end=array.length]) :替换。
 ```
@@ -98,15 +97,15 @@
     _.groupBy([4.2, 6.1, 6.4], function(n) {
     return Math.floor(n);
     });
-     => { '4': [4.2], '6': [6.1, 6.4] }
+    => { '4': [4.2], '6': [6.1, 6.4] }
 
     _.groupBy([4.2, 6.1, 6.4], function(n) {
     return this.floor(n);
     }, Math);
-     => { '4': [4.2], '6': [6.1, 6.4] }
+    => { '4': [4.2], '6': [6.1, 6.4] }
 
     _.groupBy(['one', 'two', 'three'], 'length');
-     => { '3': ['one', 'two'], '5': ['three'] }
+    => { '3': ['one', 'two'], '5': ['three'] }
 ```
 6. _.includes(collection, target, [fromIndex=0]):匹配的元素被发现返回true,否则false.
 ```
@@ -114,16 +113,16 @@
     2.target （*） ：这个值来搜索。
     3.[fromIndex=0] （数字）：从搜索的索引。
     _.includes([1, 2, 3], 1);
-     => true
+    => true
 
     _.includes([1, 2, 3], 1, 2);
-     => false
+    => false
 
     _.includes({ 'user': 'fred', 'age': 40 }, 'fred');
     => true
 
     _.includes('pebbles', 'eb');
-     => true
+    => true
 ```
 7. _.reduce(collection, 迭代的调用的函数, [初始值], [thisArg])：返回累积的值。
 ``` 
@@ -135,5 +134,6 @@
     _.reduce({ 'a': 1, 'b': 2 }, function(result, n, key) {
     result[key] = n * 3;
     return result;
-    }, {}); => { 'a': 3, 'b': 6 }
+    }, {}); 
+    => { 'a': 3, 'b': 6 }
 ```
