@@ -32,7 +32,7 @@
     //         Provider(LocalStorage, {useClass: LocalStorage})
     // ];
 ```
-2. 在跟模块app.module中引入import这个文件。
+2. 在跟模块app.module中引入import这个文件 --providers:[LocalStorage]
 3. 在需要使用的组件中引入这个文件。
 4. 使用时先new 一个实例才能使用。
 ```
