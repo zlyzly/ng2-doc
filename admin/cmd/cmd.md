@@ -1,5 +1,5 @@
 ### cmd常用的命令
-```
+
 - 查看全局安装 npm list -g --depth 0 
 - 淘宝镜像 npm install cnpm -g 
 - 切换到d盘  d:
@@ -13,4 +13,4 @@
 - 卸载全部 npm uninstall gulp-less gulp-uglify gulp-concat .....
 可以借助 npm install rimraf -g 下载 然后用 rimraf node_modules 
 - 当前目录已安装插件 npm list 
-```
+
