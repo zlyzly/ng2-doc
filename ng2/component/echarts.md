@@ -6,8 +6,8 @@
     1.如果使用组件的父组件是不是是根组件,在其父组件的module中引入
     import { EchartsNg2Module } from 'echarts-ng2';
     2.在本组件中引入
-    import { EChartOption } from 'echarts-ng2';//数据
-    import 'echarts/theme/dark';//主题样式
+    import { EChartOption } from 'echarts-ng2';//数据(变量都在这个对象中)
+    import 'echarts/theme/dark';//主题样式(多种)
     3.配置图表数据 
     option: EChartOption = {
         title: {
