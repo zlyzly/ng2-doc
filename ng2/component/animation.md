@@ -1,6 +1,8 @@
-### ng2(动画)
-- 定义一个组件文件并导出
+### ng2(动画可用多个)
+- 定义一个组件文件并导出 
+- 进场：void => * 离场：* => void 
 ```
+    -----------飞入--------------
     import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
 
     export const flyIn = trigger('flyIn', [
@@ -18,6 +20,18 @@
             style({opacity: 1, transform: 'translateX(-25px)', offset: 0.7}),
             style({opacity: 0, transform: 'translateX(100%)',  offset: 1.0})
         ]))
+    ])
+    ]);
+    ------------显隐----------------
+    import { trigger, state, style, transition, animate, keyframes } from '@angular/animations';
+
+    export const fadeIn = trigger('fadeIn', [
+    transition("void => *", [
+        style({ opacity: 0 }),
+        animate(2000, style({ opacity: 1 }))
+    ]),
+    transition("* => void", [
+        animate(2000, style({ opacity: 0 }))
     ])
     ]);
 ```
