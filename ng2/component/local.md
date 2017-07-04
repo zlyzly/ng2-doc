@@ -1,5 +1,7 @@
 ### 本地储存LocalStorage
 1. 首先新建一个文件local-storage.ts，随意放置。
+2. localStorage：使用时可以不用添加,因为他是window的方法可以直接使用.let ls = window.localStorage;
+然后使用localStorage的用法。
 <!--![local-storage.ts](../img/1.png)
 ![local-storage.ts](../img/2.png)-->
 ```
