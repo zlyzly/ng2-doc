@@ -56,6 +56,8 @@
         }
         this.threeEvent.emit(obj);
     }
+    子组件.html
+    <button (click)='three(obj)'>点击</button>
     父组件.ts
     getThreeEvent(obj:Object){
     console.log(obj);
