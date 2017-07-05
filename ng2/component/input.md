@@ -40,3 +40,28 @@
     this.list.splice(i, 1)
     }
 ```
+- 
+    6. 单独使用@Input @Output 
+```
+    子传父 用事件监听者。把父元素需要的数据发射到父组件。
+    还是在子组件中运用，子组件中有一个点击者，把值传过去,
+    在父组件中用子组件时把点击事件绑定事件监听者，参数带上($event)，多个参数时可以放进一个对象中，比较方便。
+    子组件.ts
+    @Output() threeEvent = new EventEmitter<any>();
+    <!--点击事件-->
+    three(obj: Object) {
+         obj = {
+            hide:this.hide,
+            list:this.list,
+        }
+        this.threeEvent.emit(obj);
+    }
+    父组件.ts
+    getThreeEvent(obj:Object){
+    console.log(obj);
+    console.log(obj['list'])
+    this.hide = obj['hide'];
+    }
+    父组件.html
+    <zi-three (threeEvent)="getThreeEvent($event)"></zi-three>
+```
