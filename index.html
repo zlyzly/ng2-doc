@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>烟花效果</title>
+    <style type="text/css">
+        body {
+            background: black;
+            overflow: hidden;
+        }
+
+        div {
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <script type="text/javascript">
+        var log = console.log.bind(console);
+        window.onload = function () {
+        };
+        //    创建随机颜色
+        function rgb() {
+            var str = Math.ceil(Math.random() * 16777215).toString(16);
+            log(str);
+            while (str.length < 6) {
+                str = "0" + str;
+            }
+            return "#" + str;
+        }
+        document.onclick = function (event) {
+            var oEvent = event || window.event;
+            var t = oEvent.clientY;
+            var l = oEvent.clientX;
+            //        创建一个div
+            var addDiv = document.createElement("div");
+            addDiv.style.width = "4px";
+            addDiv.style.height = "20px";
+            addDiv.style.background = "red";
+            document.body.appendChild(addDiv);
+            addDiv.style.top = document.documentElement.clientHeight + "px";
+            addDiv.style.left = l + "px";
+            //        让div从下往上移动到鼠标位置
+            var timer = setInterval(
+                function () {
+                    addDiv.style.top = addDiv.offsetTop - 20 + "px";
+                    if (addDiv.offsetTop <= t) {
+                        clearInterval(timer);
+                        document.body.removeChild(addDiv);
+                        var i = 0;
+                        var aDiv = [];
+                        for (var i = 0; i < 50; i++) {
+                            var oDiv = document.createElement("div");
+                            oDiv.style.background = rgb();
+                            oDiv.style.width = "2px";
+                            oDiv.style.height = "2px";
+                            oDiv.style.top = t + "px";
+                            oDiv.style.left = l + "px";
+                            document.body.appendChild(oDiv);
+                            aDiv.push(oDiv);
+                            oDiv.speedX = Math.random() * 20 - 10;//创建一个X轴速度
+                            oDiv.speedY = Math.random() * 20 - 10;//创建一个Y轴速度
+                        }
+                        //                        创建多个div
+                        var newTimer = setInterval(//让每个div随机往下掉
+                            function () {
+                                var count = 0;
+                                for (var i = 0; i < aDiv.length; i++) {
+                                    if (!aDiv[i]) continue;//当aDiv[i]为空时不再继续循环操作
+                                    aDiv[i].style.left = aDiv[i].offsetLeft + aDiv[i].speedX + "px";
+                                    aDiv[i].style.top = aDiv[i].offsetTop + aDiv[i].speedY + "px";
+                                    aDiv[i].speedY++;//Y轴的速度越来越大
+                                    var winWidth = document.documentElement.clientWidth || document.body.clientWidth;
+                                    var winHeight = document.documentElement.clientWidth || document.body.clientHeight;
+                                    if (aDiv[i].offsetLeft < 0 || aDiv[i].offsetLeft > winWidth || aDiv[i].offsetTop > winHeight) {
+                                        document.body.removeChild(aDiv[i]);
+                                        aDiv[i] = null;
+                                    }
+                                    count++;
+                                    if (count == 0) {//当所有div掉出屏幕事清除newTimer
+                                        //                                      console.log(count);
+                                        clearInterval(newTimer);
+                                    }
+                                }
+                            } , 30);
+                    }
+                }, 30)
+        }
+    </script>
+</body>
+
+</html>
