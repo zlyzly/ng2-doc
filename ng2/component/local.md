@@ -34,8 +34,11 @@
     //         Provider(LocalStorage, {useClass: LocalStorage})
     // ];
 ```
+- 
 2. 在跟模块app.module中引入import这个文件 --providers:[LocalStorage]
+- 
 3. 在需要使用的组件中引入这个文件。
+- 
 4. 使用时先new 一个实例才能使用。
 ```
     **.component.ts中
@@ -49,5 +52,26 @@
     console.log(ls.get('password'));//取到password的value.
      }
 ```
+- 
 5. localstorage一共有保存、取值、删除某一个、删除全部、保存对象、删除对象，这些方法，可以在文件local-storage.ts中添加方法。
+- 
+ 6. localStorage怎么保存对象
+```
+存：
+var obj = {"name":"xiaoming","age":"16"}
+localStorage.setItem("userInfo",JSON.stringify(obj));
+取：
+var user = JSON.parse(localStorage.getItem("userInfo"))
+删除：
+localStorage.remove("userInfo);
+清空：
+localStorage.clear();
+```
+- 
+7. localStorage怎么保存数组
+与对象一样，存的是先转化成字符串对象，在保存。
+
+
+
+
 
