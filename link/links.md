@@ -1,2 +1,2 @@
-###  文档
-- [javaScript](js.md)
+###  javaScript
+- [javaScript基础](http://bonsaiden.github.io/JavaScript-Garden/zh/) 
