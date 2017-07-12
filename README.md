@@ -1,6 +1,4 @@
-### 链接
-  - [常用]()
-## 样式问题
+### 样式问题
   - [ng2-中的样式](http://valor-software.com/ngx-bootstrap)
   - [ng2-动画](ng2/component/animation.md)
   - [ng2-localStroage](ng2/component/local.md)
@@ -10,6 +8,7 @@
 ### 常用cmd命令
   - [cmd命令](admin/cmd/cmd.md)
   - [git命令](ng2/ng2-git.md)
+  - [常用链接](link/links.md)
 ### 常用
   - [字符串截取](admin/string.md)
   - [本地存储](admin/local.md)
