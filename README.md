@@ -8,7 +8,7 @@
 ### 常用cmd命令
   - [cmd命令](admin/cmd/cmd.md)
   - [git命令](ng2/ng2-git.md)
-  - [ng2命令](ng/ng.md)
+  - [ng2命令](ng/ng2.md)
   - [常用链接](link/links.md)
 ### 常用
   - [字符串截取](admin/string.md)
