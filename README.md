@@ -1,5 +1,6 @@
 ### 样式问题
   - [ng2-中的样式](http://valor-software.com/ngx-bootstrap)
+  - [ng2-常用样式](ng2/component/style.md)
   - [ng2-动画](ng2/component/animation.md)
   - [ng2-localStroage](ng2/component/local.md)
   - [ng2-图表](ng2/component/charts.md)
