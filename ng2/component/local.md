@@ -64,7 +64,10 @@ localStorage.clear();
 ```
 8. localStorage怎么保存数组
 与对象一样，存的是先转化成字符串对象，在保存。
-9. localStorage是Windows的方法，可以直接使用。不用定义以上的文件与方法。
+9. localStorage是Window的方法，可以直接使用。不用定义以上的文件与方法。
+```
+const ls = window.localStorage;可用
+```
 
 
 
