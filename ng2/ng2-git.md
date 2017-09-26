@@ -7,7 +7,7 @@
     git add 文件名
 
     提交缓存的变更到本地仓库：  
-    git commit -m "[代码提交的说明]"  
+    git commit -m "代码提交的说明"  
 
     提交本地仓库的变更到远程仓库的mes分支：
     git push -u origin mes 
@@ -44,7 +44,7 @@
     git add .
     git commit -m "dd"
     git push vosung zhangly 想保证自己的分支干净才能去拉新的代码
-    git checkout   主分支
+    git checkout  主分支
     git pull  拉下来主分支新的代码
     git checkout 自己分支 
     git merge mes  与新的代码合并
