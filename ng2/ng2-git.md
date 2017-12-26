@@ -43,9 +43,9 @@
     git status 
     git add .
     git commit -m "dd"
-    git push vosung zhangly 想保证自己的分支干净才能去拉新的代码
+    git push vosung zhangly 先保证自己的分支干净才能去拉新的代码
     git checkout  主分支
-    git pull  拉下来主分支新的代码
+    git pull origin mes 拉下来(主分支)新的代码
     git checkout 自己分支 
     git merge mes  与新的代码合并
     git pull  查看有无冲突，修改后运行项目成功 
