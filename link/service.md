@@ -1,9 +1,9 @@
 ## 项目部署
- ### 1.1需要软件
+ ### 1需要软件
  #### 1.1 a:BtMstsc（链接服务器工具）- [地址](https://share.weiyun.com/11e46c7bb28b2640c01015d63edec65e)
  #### 1.2 b:FlashFxp （把本地打包好的文件上传到服务器的工具 - [地址](https://share.weiyun.com/7307c7463763352ce3f659b81868dca8)
 
- ### 1.2操作
+ #### 1.3操作
  ```
  a:解压后一个文件node服务器壳 需要放在服务器上的文件打包 build 生成一个dist文件夹 
    先删掉node文件中的app文件 把dist改名成app 放进node文件中 。
