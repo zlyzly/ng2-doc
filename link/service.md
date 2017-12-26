@@ -1,11 +1,7 @@
 ## 项目部署
- ### 1.起步
- #### 1.1需要软件
-
- #### 1.1.1 a:BtMstsc（链接服务器工具）
- - [地址](https://share.weiyun.com/11e46c7bb28b2640c01015d63edec65e)
- #### 1.1.2 b:FlashFxp （把本地打包好的文件上传到服务器的工具
- - [地址](https://share.weiyun.com/7307c7463763352ce3f659b81868dca8)
+ ### 1需要软件
+ #### 1.1 a:BtMstsc（链接服务器工具）- [地址](https://share.weiyun.com/11e46c7bb28b2640c01015d63edec65e)
+ #### 1.2 b:FlashFxp （把本地打包好的文件上传到服务器的工具 - [地址](https://share.weiyun.com/7307c7463763352ce3f659b81868dca8)
 
  #### 1.2操作
  ```
