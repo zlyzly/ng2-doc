@@ -28,5 +28,4 @@ const arr = [1, 3, 4, 5, 6]
  ```
     1. [style.padding-left.px]="obj.treeheight == 2 ? 30 : 0" 
     2. [style.color]="obj.isShow == true ? 'red' : 'pink'"  // [style.color]="obj.isShow ? 'red' : 'pink'" 
-    3. 
  ```
