@@ -1,7 +1,7 @@
-- [HTML语法][html]
-- [CSS语法](#css)
-- [JS原生](#js)
-- [JQyery语法](#jq)
+[HTML语法](#html)
+[CSS语法](#css)
+[JS原生](#js)
+[JQyery语法](#jq)
 - [cjsdkjfds]
 - [dfjsjflsd]
 - [djflk;fa]
@@ -14,7 +14,7 @@
 hash绝对是环境的
 好时机好巨卡和深
 度你看你就这样
-吧总是出现问题
+总是出现问题
 一次两次呵呵了
 不知道咋想的东
 部送就是这样子
