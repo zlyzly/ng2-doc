@@ -1,4 +1,4 @@
-- [HTML语法](#html)
+- [HTML语法][#html]
 - [CSS语法](#css)
 - [JS原生](#js)
 - [JQyery语法](#jq)
@@ -26,7 +26,7 @@ hash绝对是环境的
 自己多了老家儿袭击了
 ```
 
-<span id='js'>html:基础</span>
+<span id='html'>html:基础</span>
 ```
 hash绝对是环境的好时机好巨卡和
 深度你看你就这样吧总是出现问题
