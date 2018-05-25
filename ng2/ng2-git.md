@@ -39,6 +39,16 @@
     删除某一个源
     git remote remove  源名 
 
+    新建分支
+    比如你拉库的代码，本地就会有一个与原库对应的分支dev，在开发多个任务时，如果忘记新建一个分支去开发没有关系，只要本地的dev分支没有提交过，即使修改过，此时建分支，这个新的分支相当于copy了dev最初的版本，如果dev有提交过在建分支，新建的分支就是dev最新的版本
+
+    切回到上次提交
+    git reset --hard HEAD^  当前版本HEAD,上一个版本HEAD^,上上个版本HEAD^^
+    git reset --hard 130f10a  或HEAD~100
+
+    查看命令记录
+    git reflog
+
     先提交到自己分支，保证是干净的，才能与主分支合并。
     git status 
     git add .
