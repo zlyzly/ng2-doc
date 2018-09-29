@@ -26,5 +26,5 @@
   - [Sass中文网](https://www.sass.hk/docs/)
   - [loadsh中文网](admin/lodash/index.md)
   - [UnderScore中文网](http://www.css88.com/doc/underscore/)
- ### 面试问题
- - [基础](cest/basic.md)
+ <!-- ### 面试问题
+ - [基础](cest/basic.md) -->
