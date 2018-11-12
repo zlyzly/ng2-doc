@@ -37,3 +37,20 @@
 ```
 - 在使用的组件中引入 import { flyIn } from './flyin';
 - html模板最外层 div 上添加[@flyIn]="'active'";
+
+### ng2(文字滚屏)
+```
+import { trigger, state, style, animate, transition } from '@angular/animations';
+export const SingalAnimate = trigger('signal', [
+    state('go1', style({ 'margin-top': '0px' })),
+    state('go2', style({ 'margin-top': '-144px' })),
+    state('go3', style({ 'margin-top': '-288px' })),
+    state('go4', style({ 'margin-top': '-432px' })),
+    transition('go1 => go2', animate(300)),
+    transition('go2 => go3', animate(300)),
+    transition('go3 => go4', animate(300)),
+    transition('go4 => go1', animate(0)),
+]);
+```
+- 使用方法同上[@signal]="'go1'" // 或者变量 赋初始值
+

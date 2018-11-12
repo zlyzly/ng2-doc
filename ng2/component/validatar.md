@@ -47,8 +47,12 @@
         input: [value]="obj.name" 
         * select:
         <select name="aaa" class="form-control" id="input09" [(ngModel)]='userObj.aaa'>
-        选中: <option value="全部部门" [selected[='true'  >全部部门</option> 
+        选中: <option value="全部部门" [selected]='true'  >全部部门</option> 
         赋值: <option [value]='bm' *ngFor="let bm of bumenArr;let i=index;">{{bm}}</option>
         </select>
-        * checkout :
+        * checkout : true/false 绑定
+        * radio:
+        <input type="radio" [value]='0' [(ngModel)]='params.sex' name="sex">男
+        <input type="radio" [value]='1' [(ngModel)]='params.sex' name="sex">女
+        [value]:取的是一个表达式 是数字0/1;
  ```
