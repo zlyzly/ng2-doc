@@ -7,13 +7,5 @@
 ```
     *html新增属性
 ```
-<p>这是一个diamante块</p>
-    泽斯yid-gedaia块
-
-
-
-
-
-
-> sjfhjhfff   fenshouyijinggi timian  
+ 
 
