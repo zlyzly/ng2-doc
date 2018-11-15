@@ -1,5 +1,6 @@
 ### echarts-ng2
 - [githubdemo](https://github.com/zlyzly/echarts-ng2)
+- [包含交互事件](https://github.com/xieziyu/ngx-echarts)
 1. 先要安装插件  cnpm install echarts-ng2 --save
 2. 使用
 ```
