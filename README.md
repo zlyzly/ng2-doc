@@ -1,11 +1,10 @@
 ### 样式问题
-  - [ng2](ng2/component/ng2)
+  - [ng2](ng2/ng2.md)
   - [ng2-中的样式](http://valor-software.com/ngx-bootstrap)
   - [观察者模式](https://baike.baidu.com/item/%E8%A7%82%E5%AF%9F%E8%80%85%E6%A8%A1%E5%BC%8F/5881786?fr=aladdin)
 ### 常用cmd命令
   - [cmd命令](admin/cmd/cmd.md)
   - [git命令](ng2/ng2-git.md)
-  - [ng2命令](ng2/ng2.md)
   - [常用链接](link/links.md)
 ### 常用
   - [字符串截取](admin/string.md)

@@ -12,3 +12,14 @@
 6. 提交代码合并之前 构建项目 npm run build:prod 避免 ng serve 不能暴露的错误。
 7. 注意代码规范，不使用的虽没有报错，但是最好不要保留到代码中。
 ```
+#### ng2用到知识点
+  - [ng2-常用样式](ng2/component/style.md)
+  - [ng2-动画](ng2/component/animation.md)
+  - [ng2-localStroage](ng2/component/local.md)
+  - [ng2-图表](ng2/component/charts.md)
+  - [echarts图表插件](ng2/component/echarts.md)
+  - [Input父传子](ng2/component/input.md)
+  - [ng2-form表单](ng2/component/validatar.md)
+  - [观察者模式理解](ng2/component/signal.md)
+  - [项目中英文版](ng2/component/i18n.md)
+  - [长连接](ng2/component/socket.md)
